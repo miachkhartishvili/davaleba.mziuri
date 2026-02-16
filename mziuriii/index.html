@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>საშოპინგო სია</title>
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>საშოპინგო სია</h2>
+
+      <input
+        type="text"
+        id="search-input"
+        placeholder="ძებნა..."
+        oninput="searchItems()"
+      />
+
+      <input
+        type="text"
+        id="item-input"
+        placeholder="დაამატეთ ახალი პროდუქტი..."
+      />
+
+      <div class="buttons">
+        <button onclick="addNewItem()">დამატება</button>
+        <button onclick="addNewItemAtStart()">თავში დამატება</button>
+        <button onclick="deleteLastItem()">ბოლო წაშლა</button>
+        <button onclick="deleteFirstItem()">პირველი წაშლა</button>
+      </div>
+
+      <ul id="itemsList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
